@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seed Hash Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div id="currentTime">00:00</div>
+        <div id="classification">Classificação: Rosa</div>
+        <div id="entryTime">Entrada: 00:00:00</div>
+        <button id="exitButton">Exit</button>
+    </div>
+    <div class="container">
+        <h1>Seed Hash Calculator</h1>
+        <form id="seedForm">
+            <label for="serverSeed">Semente do Servidor:</label>
+            <input type="text" id="serverSeed" required>
+            
+            <label for="clientSeed1">Semente do Cliente (Jogador 1):</label>
+            <input type="text" id="clientSeed1" required>
+            
+            <label for="clientSeed2">Semente do Cliente (Jogador 2):</label>
+            <input type="text" id="clientSeed2" required>
+            
+            <label for="clientSeed3">Semente do Cliente (Jogador 3):</label>
+            <input type="text" id="clientSeed3" required>
+            
+            <button type="submit">Calcular</button>
+        </form>
+        
+        <div id="result">
+            <h2>Resultado</h2>
+            <p id="hashResult"></p>
+            <p id="hexResult"></p>
+            <p id="decimalResult"></p>
+            <p id="finalResult"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
